@@ -1,1 +1,1 @@
-export * from "./HearSupply.tsx";
+export * from "./HeatSupply.tsx";

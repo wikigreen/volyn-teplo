@@ -2,7 +2,7 @@ import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Container } from "@mui/material";
 
-export const HearSupply: FC = () => {
+export const HeatSupply: FC = () => {
   return (
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>

@@ -3,7 +3,10 @@ import { AboutUs } from "../pages/AboutUs";
 import { Engineering } from "../pages/Engineering";
 import { Projecting } from "../pages/Projecting";
 import { Construction } from "../pages/Construction";
-import { HearSupply } from "../pages/HeatSupply";
+import { HeatSupply } from "../pages/HeatSupply";
+import { FuelPellets } from "../pages/FuelPellets";
+import { Briquettes } from "../pages/Briquettes";
+import { WoodChips } from "../pages/WoodChips";
 
 export const navItems: Record<string, NavItemType> = {
   aboutUs: {
@@ -13,34 +16,34 @@ export const navItems: Record<string, NavItemType> = {
   services: {
     title: "Послуги",
     child: {
-      pelet: {
+      engineering: {
         title: "Інжинірингові послуги",
         component: <Engineering />,
       },
-      breket: {
+      projecting: {
         title: "Проектні послуги",
         component: <Projecting />,
       },
-      triska: {
+      construction: {
         title: "Будівельно-монтажні",
         component: <Construction />,
       },
-      heatDelivery: {
+      heatSupply: {
         title: "Послуги з теплопостачання",
-        component: <HearSupply />,
+        component: <HeatSupply />,
       },
     },
   },
   fuel: {
     title: "Альтернативне паливо",
     child: {
-      pelet: { title: "Пелета", component: <h1>Пелета</h1> },
-      breket: { title: "Брикет", component: <h1>Брикет</h1> },
-      triska: { title: "Тріска", component: <h1>Тріска</h1> },
+      fuelPellets: { title: "Пелета паливна", component: <FuelPellets /> },
+      briquettes: { title: "Брикети", component: <Briquettes /> },
+      woodChips: { title: "Тріска", component: <WoodChips /> },
     },
   },
   equipment: {
-    title: "Контакти",
+    title: "Обладнання",
     child: {
       boiler: { title: "Котли", component: <h1>Котли</h1> },
       waterHeater: {

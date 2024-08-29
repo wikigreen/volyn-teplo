@@ -7,6 +7,10 @@ import { HeatSupply } from "../pages/HeatSupply";
 import { FuelPellets } from "../pages/FuelPellets";
 import { Briquettes } from "../pages/Briquettes";
 import { WoodChips } from "../pages/WoodChips";
+import { Boilers } from "../pages/Boilers";
+import { WaterHeaters } from "../pages/WaterHeaters";
+import { GasTurbines } from "../pages/GasTurbines";
+import { Contacts } from "../pages/Contacts";
 
 export const navItems: Record<string, NavItemType> = {
   aboutUs: {
@@ -45,19 +49,19 @@ export const navItems: Record<string, NavItemType> = {
   equipment: {
     title: "Обладнання",
     child: {
-      boiler: { title: "Котли", component: <h1>Котли</h1> },
+      boiler: { title: "Котли", component: <Boilers /> },
       waterHeater: {
         title: "Водонагрівачі",
-        component: <h1>Водонагрівачі</h1>,
+        component: <WaterHeaters />,
       },
       gasTurbine: {
         title: "Газотурбінні установки",
-        component: <h1>Газотурбінні</h1>,
+        component: <GasTurbines />,
       },
     },
   },
   contact: {
     title: "Контакти",
-    component: <h1>Контакти</h1>,
+    component: <Contacts />,
   },
 };

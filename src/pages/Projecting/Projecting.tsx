@@ -1,13 +1,20 @@
 import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Container, List, ListItem, ListItemText } from "@mui/material";
+import AdjustIcon from "@mui/icons-material/Adjust";
 
 export const Projecting: FC = () => {
   return (
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom textAlign="center">
-          Проектні
+        <Typography
+          variant="h4"
+          component="h1"
+          gutterBottom
+          textAlign="center"
+          fontWeight={700}
+        >
+          Проектні послуги
         </Typography>
         <Typography variant="body1" paragraph>
           Ми здійснюємо проектні роботи, пов'язані зі створенням проектної
@@ -22,17 +29,21 @@ export const Projecting: FC = () => {
           спроектована та побудована енергетична система забезпечить:
         </Typography>
         <List>
-          <ListItem>
-            <ListItemText primary="- оптимізацію рівня капіталовкладень;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="Оптимізацію рівня капіталовкладень" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="- високу якість надання послуг;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="Високу якість надання послуг" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="- максимізацію кількості послуг з розумною собівартістю;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="Максимізацію кількості послуг з розумною собівартістю" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="- швидке повернення інвестицій." />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="Швидке повернення інвестицій" />
           </ListItem>
         </List>
         <Typography variant="body1" paragraph>

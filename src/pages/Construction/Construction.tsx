@@ -1,12 +1,19 @@
 import { FC } from "react";
 import Typography from "@mui/material/Typography";
 import { Box, Container, List, ListItem, ListItemText } from "@mui/material";
+import AdjustIcon from "@mui/icons-material/Adjust";
 
 export const Construction: FC = () => {
   return (
     <Container maxWidth="md">
       <Box sx={{ my: 4 }}>
-        <Typography variant="h4" component="h1" gutterBottom textAlign="center">
+        <Typography
+          variant="h4"
+          component="h1"
+          gutterBottom
+          textAlign="center"
+          fontWeight={700}
+        >
           Будівельно-монтажні
         </Typography>
         <Typography variant="body1" paragraph>
@@ -29,29 +36,37 @@ export const Construction: FC = () => {
           Основні етапи по зведенню будівлі чи споруди для нашої компанії є:
         </Typography>
         <List>
-          <ListItem>
-            <ListItemText primary="• земляні роботи включають риття котлованів і траншей, вивезення ґрунту, вертикальне планування та інші основоположні процеси;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="земляні роботи включають риття котлованів і траншей, вивезення ґрунту, вертикальне планування та інші основоположні процеси" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• бетонні роботи (монтаж опалубки, армування, бетонування конструкцій);" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="бетонні роботи (монтаж опалубки, армування, бетонування конструкцій)" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• монтаж металевого каркасу (монтаж колон та балочних клітин будівель, монтаж металевих башт, стовпів та щогл);" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="монтаж металевого каркасу (монтаж колон та балочних клітин будівель, монтаж металевих башт, стовпів та щогл)" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• кам'яні роботи (зведення стін і перегородок, облицювання стін);" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="кам'яні роботи (зведення стін і перегородок, облицювання стін)" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• покрівельні роботи;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="покрівельні роботи" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• влаштування технологічного обладнання та інженерних мереж;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="влаштування технологічного обладнання та інженерних мереж" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• оздоблювальні роботи;" />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="оздоблювальні роботи" />
           </ListItem>
-          <ListItem>
-            <ListItemText primary="• прибирання будівельного майданчика та вивезення сміття." />
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="прибирання будівельного майданчика та вивезення сміття" />
           </ListItem>
         </List>
         <Typography variant="body1" paragraph>

@@ -12,14 +12,14 @@ export const Footer: FC = () => {
         padding: 4,
         gap: 1,
         display: "flex",
-        flexDirection: { xs: "column", sm: "row" },
+        flexDirection: { xs: "column", md: "row" },
         justifyContent: "center",
       }}
     >
       <Box
         sx={{
-          height: { xs: "300px", sm: "auto" },
-          order: { xs: "1", sm: "unset" },
+          height: { xs: "300px", md: "auto" },
+          order: { xs: "1", md: "unset" },
           width: "auto",
           float: "left",
           my: "auto",

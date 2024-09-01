@@ -53,11 +53,13 @@ const StyledMenu = styled((props: MenuProps) => (
 export default function CustomizedMenus({
   item,
   menuItem,
+  onClick,
   path = "/",
 }: {
   item: string;
   path?: string;
   menuItem?: Record<string, NavItemType>;
+  onClick?: () => void;
 }) {
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
@@ -71,6 +73,7 @@ export default function CustomizedMenus({
   };
   const handleClose = () => {
     setAnchorEl(null);
+    onClick?.();
   };
 
   return (

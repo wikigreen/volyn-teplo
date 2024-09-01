@@ -67,6 +67,7 @@ export default function CustomizedMenus({
   const handleClick = (event: React.MouseEvent<HTMLElement>) => {
     if (!menuItem) {
       navigate(`/${path}`);
+      onClick?.();
       console.log(`/${path}`);
     }
     setAnchorEl(event.currentTarget);

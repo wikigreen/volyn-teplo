@@ -43,14 +43,13 @@ export const Boilers: FC = () => {
           marginBottom: "1rem",
         }}
       >
-        <LogoCard title="Kalvis" src={kalvisLogo} />
+        <LogoCard src={kalvisLogo} title="Kalvis" />
         <LogoCard src={viessmann} title="Viessmann" />
         <LogoCard src={kolvi} title="Kolvi" />
         <LogoCard src={wolf} title="Wolf" />
         <LogoCard src={vaillant} title="Vaillant" />
         <LogoCard src={ferolli} title="Ferroli" />
         <LogoCard src={kriger} title="Kriger" />
-
         <LogoCard src={buderus} title="Buderus" />
       </Box>
       <Typography variant="body1" paragraph>

@@ -24,6 +24,7 @@ export const WoodChips: FC = () => {
             float: "left",
             marginRight: 2,
             marginBottom: 1,
+            borderRadius: 4
           }}
           alt={"chips"}
           src={woodChips}

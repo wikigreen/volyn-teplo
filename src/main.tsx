@@ -22,6 +22,13 @@ const THEME = createTheme({
         },
       },
     },
+    MuiTypography: {
+      styleOverrides: {
+        root: {
+          textAlign: "left",
+        },
+      },
+    },
   },
 });
 

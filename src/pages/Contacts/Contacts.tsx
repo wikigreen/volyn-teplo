@@ -5,7 +5,7 @@ import { Box, Container } from "@mui/material";
 export const Contacts: FC = () => {
   return (
     <Container maxWidth="md">
-      <Box sx={{ my: 4 }}>
+      <Box sx={{ my: 4 }} fontSize="small">
         <Typography variant="h4" component="h1" gutterBottom textAlign="center">
           Контакти
         </Typography>

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Typography from "@mui/material/Typography";
-import { Box, Container } from "@mui/material";
+import { Box, Container, List, ListItem, ListItemText } from "@mui/material";
+import AdjustIcon from "@mui/icons-material/Adjust";
 
 export const GasTurbines: FC = () => {
   return (
@@ -23,29 +24,40 @@ export const GasTurbines: FC = () => {
         <Typography variant="body1" paragraph>
           Основні переваги енергоустановок:
         </Typography>
-        <ul>
-          <li>
-            Можливість монтажу в капітальних спорудах (реконструкція існуючих) і
-            на відкритих майданчиках (блочно-модульний варіант);
-          </li>
-          <li>
-            Мобільність, можливість установки в безпосередній близькості від
-            споживача або джерела газу;
-          </li>
-          <li>
-            Блочно-модульна конструкція дозволяє проводити встановлення та
-            ремонт обладнання на обмеженій площі;
-          </li>
-          <li>
-            Можливість швидкого відключення і запуску газотурбо-генераторної
-            частини установки протягом 15-45 хвилин;
-          </li>
-          <li>
-            Автоматична система управління і широка діагностика технічного
-            стану;
-          </li>
-          <li>Мінімальна чисельність обслуговуючого персоналу.</li>
-        </ul>
+        <List>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText
+              primary="Можливість монтажу в капітальних спорудах (реконструкція існуючих) і
+            на відкритих майданчиках (блочно-модульний варіант)"
+            />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText
+              primary="Мобільність, можливість установки в безпосередній близькості від
+            споживача або джерела газу"
+            />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText
+              primary="Блочно-модульна конструкція дозволяє проводити встановлення та
+            ремонт обладнання на обмеженій площі"
+            />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText
+              primary="Можливість швидкого відключення і запуску газотурбо-генераторної
+            частини установки протягом 15-45 хвилин"
+            />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="Мінімальна чисельність обслуговуючого персоналу" />
+          </ListItem>
+        </List>
         <Typography variant="body1" paragraph>
           Раді будемо підібрати для Вас оптимальне рішення. Вартість обладнання
           можлива з ПДВ та без ПДВ. Обговорюється та підбирається індивідуально

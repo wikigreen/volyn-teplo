@@ -27,7 +27,7 @@ const renderNavItemsToRoutes = (
 
 function App() {
   return (
-    <Box display="flex" flexDirection="column">
+    <Box display="grid" gridTemplateRows="auto 1fr auto" minHeight="100vh">
       <Container maxWidth="md">
         <Box display="flex" flexDirection="column">
           <HashRouter>

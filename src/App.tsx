@@ -5,6 +5,7 @@ import { AboutUs } from "./pages/AboutUs";
 import { navItems } from "./config";
 import { NavItemType } from "./type";
 import { ReactNode } from "react";
+import { Box } from "@mui/material";
 
 const renderNavItemsToRoutes = (
   navItems: Record<string, NavItemType>,
@@ -28,10 +29,12 @@ function App() {
     <>
       <HashRouter>
         <Header />
-        <Routes>
-          <Route index element={<AboutUs />} />
-          {renderNavItemsToRoutes(navItems)}
-        </Routes>
+        <Box sx={{ marginTop: "12rem" }}>
+          <Routes>
+            <Route index element={<AboutUs />} />
+            {renderNavItemsToRoutes(navItems)}
+          </Routes>
+        </Box>
       </HashRouter>
     </>
   );

@@ -1,6 +1,7 @@
 import { FC } from "react";
 import Typography from "@mui/material/Typography";
-import { Box, Container } from "@mui/material";
+import { Box, Container, List, ListItem, ListItemText } from "@mui/material";
+import AdjustIcon from "@mui/icons-material/Adjust";
 
 export const WaterHeaters: FC = () => {
   return (
@@ -24,12 +25,24 @@ export const WaterHeaters: FC = () => {
         <Typography variant="body1" paragraph>
           До Вашої уваги представлені наступні моделі:
         </Typography>
-        <ul>
-          <li>ВПК 100 теплопродуктивністю 100 КВт/год</li>
-          <li>ВПК 200 теплопродуктивністю 200 КВт/год</li>
-          <li>ВПК 300 теплопродуктивністю 300 КВт/год</li>
-          <li>ВПК 400 теплопродуктивністю 400 КВт/год</li>
-        </ul>
+        <List>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="ВПК 100 теплопродуктивністю 100 КВт/год" />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="ВПК 200 теплопродуктивністю 200 КВт/год" />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="ВПК 300 теплопродуктивністю 300 КВт/год" />
+          </ListItem>
+          <ListItem sx={{ gap: "1rem" }}>
+            <AdjustIcon fontSize={"small"} sx={{ width: "fitContent" }} />
+            <ListItemText primary="ВПК 400 теплопродуктивністю 400 КВт/год" />
+          </ListItem>
+        </List>
         <Typography variant="body1" paragraph>
           Вартість обладнання можлива з ПДВ та без ПДВ. Обговорюється та
           підбирається індивідуально до вимог та потреб Замовника.
